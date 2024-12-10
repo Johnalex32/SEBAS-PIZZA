@@ -5,18 +5,16 @@ const categorySchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
-        trim: trusted,
+        trim: true,
     },
     description: {
         type: String,
         required: true,
         trim: true,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    },
-});
+},
+   { timestamps:true}
+);
 
 categorySchema.pre('save', function(next){
     next();

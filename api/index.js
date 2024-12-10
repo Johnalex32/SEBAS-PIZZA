@@ -1,7 +1,7 @@
 import express from 'express'
 import conectDB from "./config/db.js";
 import dotenv from 'dotenv';
-import { userRoute } from "./routes/index.js";
+import { categoryRoute, userRoute, productRoute } from "./routes/index.js";
 
 
 const app = express();
@@ -13,6 +13,8 @@ conectDB();
 
 
 app.use('/api/users', userRoute);
+app.use('/api/category', categoryRoute);
+app.use('/api/products', productRoute);
 
 const PORT = process.env.PORT || 4000;
 

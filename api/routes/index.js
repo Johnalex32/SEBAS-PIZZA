@@ -1,4 +1,9 @@
 import userRoute from './userRoute.js';
+import categoryRoute from './categoryRoute.js';
+import productRoute from './productRoute.js';
+
 export {
-    userRoute
+    userRoute,
+    categoryRoute,
+    productRoute
 }
