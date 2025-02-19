@@ -20,3 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+function toggleDropdown(button) {
+    closeAllDropdowns(); // Cierra todas las listas antes de abrir una nueva
+    let dropdownContent = button.nextElementSibling;
+    dropdownContent.classList.toggle("show");
+}
+
+function changePrice(option, price) {
+    let dropdownContainer = option.closest(".dropdown-container");
+    let priceButton = dropdownContainer.querySelector(".price-button");
+    priceButton.innerText = "Precio: $" + price;
+    dropdownContainer.querySelector(".dropdown-content").classList.remove("show");
+}
+
+function closeAllDropdowns() {
+    let dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(dropdown => dropdown.classList.remove("show"));
+}
+
+// Cierra los menús si el usuario hace clic fuera de ellos
+window.onclick = function(event) {
+    if (!event.target.matches("button")) {
+        closeAllDropdowns();
+    }
+};

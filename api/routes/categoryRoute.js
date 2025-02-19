@@ -4,7 +4,7 @@ from "../controllers/categoryController.js";
 
 const router = express.Router();
 
-router.post('/',registerCategory);
+router.post('/registerCategory',registerCategory);
 router.get('/categories',getCategories );
 router.put('/editCategories/:id', editCategory);
 router.get('/:id',getCategoryById);

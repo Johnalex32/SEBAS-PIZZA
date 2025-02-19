@@ -61,7 +61,7 @@
           <button class="card-container" style="background: url('./imgProductos/platos.jpg');" data-plantilla="plantilllaPlatosCarta">
               <h2>PLATOS A LA CARTA</h2>
           </button>
-          <button class="card-container" style="background: url('./imgProductos/bebidas.jpg');">
+          <button class="card-container" style="background: url('./imgProductos/bebidas.jpg');" data-plantilla="plantillaBebidas">
               <h2>BEBIDAS</h2>
           </button>
       </div>
@@ -450,85 +450,6 @@
       </div>
   </div>
   </template>
-  <!--PLATOS A LA CARTA--->
-  <template class="plantilllaPlatosCarta">
-    <div class="container-productos">
-      <h1 class="encabezado">
-        SEBAS <br />
-        PIZZA
-      </h1>
-      <div class="cajon2">
-        <h1 class="platosCarta">PLATOS A LA CARTA</h1>
-      </div>
-        <div class="containerCard">
-            <div class="cardImg">
-              <img class="" src="view/img/Palp.jpeg" />
-            </div> 
-            <div class="cardDescription">
-                <h2 class="nombre">PECHUGA A LA PLANCHA</h2>
-                  <br />
-
-                <h3 class="ingredientes">
-                INGREDIENTES: <br />
-
-                  <ul>
-                    <li>ARROZ</li>
-                    <li>ENSALADA</li>
-                    <li>PAPA</li>
-                  </ul>
-                </h3>
-            </div>
-            <button class="btn btnCard"> 23.000$ </button>
-        </div>
-      <div class="containerCard">
-          <div class="cardImg">
-            <img class="" src="view/img/Psc.jpeg" />
-          </div>
-          <div class="cardDescription">
-              <h2 class="nombre">PECHUGA SALSA CHAMPI</h2>
-              <br />
-              <h3 class="ingredientes">
-              
-                INGREDIENTES: <br />
-              
-                <ul>
-                  <li>PECHUGA DESMECHADA</li>
-                  <li>CHAMPIÑONES + QUESO</li>
-                  <li>LECHUGA + SALSA DE AJO</li>
-                </ul>
-              </h3>
-              <button class="btn btnCard"> 23.000$ </button>
-          </div>
-      </div>
-      <div class="containerCard">
-          <div class="cardImg">
-            <img class="" src="view/img/Psc.jpeg" />
-          </div>
-          <div class="cardDescription">
-              <h2 class="nombre">PECHUGA A LA PLANCHA</h2>
-              <br />
-              <h3 class="ingredientes">
-              
-                INGREDIENTES: <br />
-
-                <ul>
-                  <li>PAPA + ENSALADA</li>
-                  <li>ARROZ</li>
-                </ul>
-              </h3>
-              <button class="btn btnCard"> 23.000$ </button>
-          </div>    
-      </div>
-      <div class="btns">
-        <button data-plantilla="plantillaMenu" class="btnAtras">Atras</button>
-        <button class="btnCarrito"><svg xmlns="http://www.w3.org/2000/svg" color="white" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-          <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
-          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-          </svg>
-        </button>
-      </div>
-  </div>
-  </template>
   <!--SALCHIPAPAS-->    
   <template class="plantillaSalchipapas">
     <div class="container-productos">
@@ -613,9 +534,201 @@
       </div>
     </div>
   </template>
+  <!--PLATOS A LA CARTA--->
+  <template class="plantilllaPlatosCarta">
+    <div class="container-productos">
+      <h1 class="encabezado">
+        SEBAS <br />
+        PIZZA
+      </h1>
+      <div class="cajon2">
+        <h1 class="platosCarta">PLATOS A LA CARTA</h1>
+      </div>
+        <div class="containerCard">
+            <div class="cardImg">
+              <img class="" src="view/img/Palp.jpeg" />
+            </div> 
+            <div class="cardDescription">
+                <h2 class="nombre">PECHUGA A LA PLANCHA</h2>
+                  <br />
 
+                <h3 class="ingredientes">
+                INGREDIENTES: <br />
+
+                  <ul>
+                    <li>ARROZ</li>
+                    <li>ENSALADA</li>
+                    <li>PAPA</li>
+                  </ul>
+                </h3>
+            </div>
+            <button class="btn btnCard"> 23.000$ </button>
+        </div>
+      <div class="containerCard">
+          <div class="cardImg">
+            <img class="" src="view/img/Psc.jpeg" />
+          </div>
+          <div class="cardDescription">
+              <h2 class="nombre">PECHUGA SALSA CHAMPI</h2>
+              <br />
+              <h3 class="ingredientes">
+              
+                INGREDIENTES: <br />
+              
+                <ul>
+                  <li>PECHUGA DESMECHADA</li>
+                  <li>CHAMPIÑONES + QUESO</li>
+                  <li>LECHUGA + SALSA DE AJO</li>
+                </ul>
+              </h3>
+              <button class="btn btnCard"> 23.000$ </button>
+          </div>
+      </div>
+      <div class="containerCard">
+          <div class="cardImg">
+            <img class="" src="view/img/Psc.jpeg" />
+          </div>
+          <div class="cardDescription">
+              <h2 class="nombre">PECHUGA A LA PLANCHA</h2>
+              <br />
+              <h3 class="ingredientes">
+              
+                INGREDIENTES: <br />
+
+                <ul>
+                  <li>PAPA + ENSALADA</li>
+                  <li>ARROZ</li>
+                </ul>
+              </h3>
+              <button class="btn btnCard"> 23.000$ </button>
+          </div>    
+      </div>
+      <div class="btns">
+        <button data-plantilla="plantillaMenu" class="btnAtras">Atras</button>
+        <button class="btnCarrito"><svg xmlns="http://www.w3.org/2000/svg" color="white" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+          <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg>
+        </button>
+      </div>
+  </div>
+  </template>
+  <!-- BEBIDAS -->
+  <template class="plantillaBebidas">
+    <div class="container-productos">
+      <h1 class="encabezado">
+        SEBAS <br />
+        PIZZA
+      </h1>
+      <div class="cajon2">
+        <h1 class="BEBIDAS">BEBIDAS</h1>
+      </div>
+      <div class="containerCard">
+        <div class="cardImg">
+          <img class="" src="view/img/cocacola.jfif" />
+        </div>
+        <div class="cardDescription">
+          <h2 class="nombre"> COCA-COLA </h2>
+          <br />
+
+          <h3 class="ingredientes">
+            Tamaño: <br>
+
+            <div class="dropdown">
+              <button class="btnOpcion" onclick="toggleDropdown(this)">Seleccionar Tamaño</button>
+              <div class="dropdown-content">
+                  <a onclick="changePrice(this, 10)">Coca-Cola original 250 ml</a>
+                  <a onclick="changePrice(this, 20)">Coca-Cola original 400 ml</a>
+                  <a onclick="changePrice(this, 30)">Coca-Cola Zero 400 ml</a>
+              </div>
+            </div>
+          <br>
+        </div>
+        <button class="btnCard">0$</button>
+      </div>
+      <div class="containerCard">
+        <div class="cardImg">
+          <img class="" src="view/img/pepsi.webp" />
+        </div>
+        <div class="cardDescription">
+          <h2 class="nombre"> COCA-COLA </h2>
+          <br />
+
+          <h3 class="ingredientes">
+            Tamaño: <br>
+
+            <div class="dropdown">
+              <button class="btnOpcion" onclick="toggleDropdown(this)">Seleccionar Tamaño</button>
+              <div class="dropdown-content">
+                  <a onclick="changePrice(this, 10)">pepsi</a>
+                  <a onclick="changePrice(this,20)">Coca-Cola original 400 ml</a>
+                  <a onclick="changePrice(this, 30)">Coca-Cola Zero 400 ml</a>
+              </div>
+            </div>
+          <br>
+        </div>
+        <button class="priceButton">0$</button>
+      </div>
+      <div class="containerCard">
+        <div class="cardImg">
+          <img class="" src="view/img/fanta.jpg" />
+        </div>
+        <div class="cardDescription">
+          <h2 class="nombre"> COCA-COLA </h2>
+          <br />
+
+          <h3 class="ingredientes">
+            Tamaño: <br>
+
+            <div class="dropdown">
+              <button class="btnOpcion" onclick="toggleDropdown(this)">Seleccionar Tamaño</button>
+              <div id="dropdownMenu" class="dropdown-content">
+                  <a onclick="changePrice(this,10)">Coca-Cola original 250 ml</a>
+                  <a onclick="changePrice(this,20)">Coca-Cola original 400 ml</a>
+                  <a onclick="changePrice(this,30)">Coca-Cola Zero 400 ml</a>
+              </div>
+            </div>
+          <br>
+        </div>
+        <button id="priceButton" class="btnCard">0$</button>
+      </div>
+      <div class="containerCard">
+        <div class="cardImg">
+          <img class="" src="view/img/jugonatural.jpeg" />
+        </div>
+        <div class="cardDescription">
+          <h2 class="nombre"> COCA-COLA </h2>
+          <br />
+
+          <h3 class="ingredientes">
+            Tamaño: <br>
+
+            <div class="dropdown">
+              <button class="btnOpcion" onclick="toggleDropdown(this)">Seleccionar Tamaño</button>
+              <div id="dropdownMenu" class="dropdown-content">
+                  <a onclick="changePrice(this,10)">Coca-Cola original 250 ml</a>
+                  <a onclick="changePrice(this,20)">Coca-Cola original 400 ml</a>
+                  <a onclick="changePrice(this,30)">Coca-Cola Zero 400 ml</a>
+              </div>
+            </div>
+          <br>
+        </div>
+        <button id="priceButton" class="btnCard">0$</button>
+      </div>
+      <div class="btns">
+        <button data-plantilla="plantillaMenu" class="btnAtras">Atras</button>
+        <button class="btnCarrito"><svg xmlns="http://www.w3.org/2000/svg" color="white" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+          <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </template>
+  
 
 <script src="view/JS/controlador.js" defer></script>
+
     
     <!----------------------------------LINKS--------------------->
   </body> 

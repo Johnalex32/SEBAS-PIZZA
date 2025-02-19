@@ -4,7 +4,7 @@ from "../controllers/productController.js";
 
 const router = express.Router();
 
-router.post('/',registerProduct);
+router.post('/registerProductos',registerProduct);
 router.get('/productos',getProductsAll);
 router.put('/editProductos/:id',editProduct);
 router.get('/:id',getProductById);
