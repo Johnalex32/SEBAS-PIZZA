@@ -22,27 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function toggleDropdown(button) {
-    closeAllDropdowns(); // Cierra todas las listas antes de abrir una nueva
-    let dropdownContent = button.nextElementSibling;
-    dropdownContent.classList.toggle("show");
-}
+let total = 0;
+        const precioProducto = 10; // Precio por unidad
 
-function changePrice(option, price) {
-    let dropdownContainer = option.closest(".dropdown-container");
-    let priceButton = dropdownContainer.querySelector(".price-button");
-    priceButton.innerText = "Precio: $" + price;
-    dropdownContainer.querySelector(".dropdown-content").classList.remove("show");
-}
+        function agregarProducto() {
+            total += precioProducto;
+            actualizarBoton();
+        }
 
-function closeAllDropdowns() {
-    let dropdowns = document.querySelectorAll(".dropdown-content");
-    dropdowns.forEach(dropdown => dropdown.classList.remove("show"));
-}
+        function eliminarProducto() {
+            if (total > 0) {
+                total -= precioProducto;
+            }
+            actualizarBoton();
+        }
 
-// Cierra los menús si el usuario hace clic fuera de ellos
-window.onclick = function(event) {
-    if (!event.target.matches("button")) {
-        closeAllDropdowns();
-    }
-};
+        function actualizarBoton() {
+            document.getElementById("textoBoton").innerText = `Total: $${total}`;
+        }
+   

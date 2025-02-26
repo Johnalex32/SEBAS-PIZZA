@@ -634,14 +634,11 @@
           <h3 class="ingredientes">
             Tamaño: <br>
 
-            <div class="dropdown">
-              <button class="btnOpcion" onclick="toggleDropdown(this)">Seleccionar Tamaño</button>
-              <div class="dropdown-content">
-                  <a onclick="changePrice(this, 10)">Coca-Cola original 250 ml</a>
-                  <a onclick="changePrice(this, 20)">Coca-Cola original 400 ml</a>
-                  <a onclick="changePrice(this, 30)">Coca-Cola Zero 400 ml</a>
-              </div>
-            </div>
+            <button class="boton-compra">
+              <button class="boton-menos" onclick="eliminarProducto()">−</button>
+              <span id="textoBoton">Total: $0</span>
+              <button class="boton-mas" onclick="agregarProducto()">+</button>
+          </button>
           <br>
         </div>
         <button class="btnCard">0$</button>
