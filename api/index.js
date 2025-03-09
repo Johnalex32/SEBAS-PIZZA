@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import { categoryRoute, userRoute, productRoute } from "./routes/index.js";
 
 
+
 const app = express();
 app.use(express.json());
 
