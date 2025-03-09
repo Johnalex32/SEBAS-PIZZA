@@ -9,7 +9,7 @@
     width: 100%;
     max-width: 600px;
     margin: auto;
-    background: linear-gradient(#00000050, #000000d9), url(/SEBAS-PIZZA-main/client/view/img/imgProductos/fondoIndex.jpeg);
+    background: linear-gradient(#00000050, #000000d9), url(/client/view/img/fondoIndex.jpeg);
     
 }
 /* estilo del contenido de la primera pantalla */
