@@ -22,22 +22,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-let total = 0;
-        const precioProducto = 10; // Precio por unidad
-
-        function agregarProducto() {
-            total += precioProducto;
-            actualizarBoton();
-        }
-
-        function eliminarProducto() {
-            if (total > 0) {
-                total -= precioProducto;
-            }
-            actualizarBoton();
-        }
-
-        function actualizarBoton() {
-            document.getElementById("textoBoton").innerText = `Total: $${total}`;
-        }
-   
