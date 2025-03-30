@@ -1,27 +1,35 @@
-import User from '../models/UserSchema.js'
-import generateId from '../helpers/generateId.js'
+import User from '../models/UserSchema.js';
 
-const register = async (req, res) => {
-    const {name} = req.body;
 
-    const existingUser = await User.findOne({ name });
-
-    if (existingUser) {
-        const error = new Error('Usuario no existe')
-        return res.status(404).json({msg:error.message})
-    }
+const createUser = async (req, res) => {
     try {
-        const user = new User(req.body);
-        user.token = generateId();
-        await user.save();
-        res.status(200).json({msg:'Usuario se ha guardado correctamente'}) 
+        console.log("Datos recibidos:", req.body); // 🔍 Verifica los datos que llegan
 
+        const { nombre, numeroMesa } = req.body;
+
+        if (!numeroMesa) {
+            return res.status(400).json({ error: "El número de mesa es obligatorio y debe ser un número válido." });
+        }
+
+        const newUser = new User({ nombre, numeroMesa });
+        await newUser.save();
+
+        res.status(201).json(newUser);
     } catch (error) {
-        console.log(error)
-        return res.status(400).json({msg:'Usuario no guardado'})
+        console.error("❌ Error al guardar en MongoDB:", error);
+        res.status(500).json({ error: "Error al guardar el usuario" });
     }
-}
+};
 
-export {
-    register
-}
+// NUEVA FUNCIÓN para obtener todos los usuarios
+const getUsers = async (req, res) => {
+    try {
+        const usuarios = await User.find();
+        res.status(200).json({ data: usuarios });
+    } catch (error) {
+        console.error('❌ Error al obtener usuarios:', error);
+        res.status(500).json({ error: 'Error del servidor' });
+    }
+};
+
+export { createUser, getUsers };
