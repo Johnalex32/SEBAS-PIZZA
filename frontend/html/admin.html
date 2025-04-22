@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Administrador</title>
+  <link rel="stylesheet" href="/frontend/css/admin.css" />
+</head>
+<body>
+  <h1>📋 Panel de Administrador</h1>
+
+  <!-- Contenedor de pestañas -->
+  <div class="tabs">
+    <button id="btnPedidos" class="tab-button active">Pedidos Recientes</button>
+    <button id="btnMenu" class="tab-button">Menú Actual</button>
+  </div>
+
+  <!-- Contenedor principal de las secciones -->
+  <div class="panel">
+    <!-- Sección de Pedidos -->
+    <section id="seccionPedidos" class="tab-content active">
+      <h2>Pedidos Recientes</h2>
+      <div id="listaPedidos"></div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="seccionMenu" class="tab-content">
+      <h2>Menú Actual</h2>
+      <div id="listaMenu"></div>
+
+      <!-- Sección para Agregar Producto -->
+      <h2>Agregar Producto</h2>
+      <form id="formAgregar">
+        <input type="text" placeholder="Nombre del producto" id="nombreProducto" required />
+        <input type="number" placeholder="Precio" id="precioProducto" min="0" step="0.01" required />
+
+        <select id="categoriaProducto" required>
+          <option value="">Selecciona una categoría</option>
+        </select>
+
+        <label>Selecciona los ingredientes:</label>
+        <select id="ingredientesProducto" multiple required></select>
+
+        <button type="submit">Agregar</button>
+      </form>
+
+      <h2>Agregar Ingrediente</h2>
+      <form id="formAgregarIngrediente">
+        <input type="text" id="nombreIngrediente" placeholder="Nombre del ingrediente" required />
+        <button type="submit">Agregar Ingrediente</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="/frontend/js/admin.js"></script>
+</body>
+</html>
+

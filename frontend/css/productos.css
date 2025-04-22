@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7f0;
+  }
+  
+  header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #btnAtras, #btnCarrito {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  #tituloCategoria {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .productos-container {
+    display: flex;
+    background-image: url('../img/fondoIndex.jpeg');
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .producto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .producto h3 {
+    margin: 0 0 10px;
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: #d32f2f;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .precio.clickeado {
+    transform: scale(1.2);
+    color: green;
+  }
+  
+  .ingredientes {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .btn-agregar {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .info-contacto {
+    background-color: #d32f2f;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .telefono, .direction {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .whatsapp, .location {
+    width: 24px;
+    height: 24px;
+  }
+  

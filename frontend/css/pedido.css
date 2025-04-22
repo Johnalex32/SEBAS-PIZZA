@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f3;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 20px;
+    background-image: url('../img/fondoIndex.jpeg');
+  }
+  
+  .pedido-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item span {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .item input {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  .formulario {
+    background-color: rgba(0, 0, 0, 0.534); 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .formulario label {
+    color: white;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .formulario input,
+  .formulario select {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .total {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  #btnConfirmar {
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .eliminar{
+    color: black;
+    font-size: 100%;
+  }
+
+  .info-contacto {
+    background-color: #d32f2f;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .telefono, .direction {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .whatsapp, .location {
+    width: 24px;
+    height: 24px;
+  }

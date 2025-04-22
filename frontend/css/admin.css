@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #fff8f0; /* Fondo cálido */
+}
+
+h1 {
+  color: #8b0000; /* Rojo oscuro tipo vino */
+  text-align: center;
+}
+
+/* Estilos para las pestañas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #ffe0b2; /* Beige/naranja claro */
+  border: 1px solid #ffcc80;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+  color: #4e342e; /* Marrón oscuro */
+  font-weight: bold;
+}
+
+.tab-button.active {
+  background-color: #ff7043; /* Naranja tostado */
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Estilo para las secciones */
+section {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las listas */
+#listaPedidos,
+#listaMenu {
+  margin-top: 10px;
+}
+
+/* Estilo para los productos */
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.producto button {
+  background: #d32f2f; /* Rojo tomate */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.producto button:hover {
+  background: #b71c1c;
+}
+
+/* Estilos para el formulario de agregar productos */
+form input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 6px 14px;
+  background-color: #388e3c; /* Verde albahaca */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #2e7d32;
+}

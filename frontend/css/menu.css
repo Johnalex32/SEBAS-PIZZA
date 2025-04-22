@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #cliente {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .grid-categorias {
+    display: flex;
+    background-image: url('../img/fondoIndex.jpeg');
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .categoria {
+    position: relative;
+    height: 180px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+
+  .categoria span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  
+  .categoria:hover {
+    transform: scale(1.05);
+    background-color: #ffe0e0;
+  }
+
+  .info-contacto {
+    background-color: #d32f2f;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .telefono, .direction {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .whatsapp, .location {
+    width: 24px;
+    height: 24px;
+  }
+  
+  
