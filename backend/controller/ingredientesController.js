@@ -17,17 +17,4 @@ exports.getByProducto = (req, res) => {
   });
 };
 
-exports.create = async (req, res) => {
-  const { nombre } = req.body;
-  if (!nombre) {
-    return res.status(400).json({ error: "El nombre es obligatorio" });
-  }
 
-  try {
-    const nuevo = await Ingredientes.create(nombre);
-    res.status(201).json(nuevo);
-  } catch (err) {
-    console.error("Error al crear ingrediente:", err);
-    res.status(500).json({ error: "Error al crear ingrediente" });
-  }
-};

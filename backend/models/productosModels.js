@@ -35,15 +35,6 @@ const Productos = {
     db.query(sql, [idProducto], callback);
   },
 
-  add: (producto, callback) => {
-    const sql = `INSERT INTO PRODUCTOS SET ?`;
-    db.query(sql, [producto], callback);
-  },
-
-  delete: (idProducto, callback) => {
-    const sql = `DELETE FROM PRODUCTOS WHERE idProducto = ?`;
-    db.query(sql, [idProducto], callback);
-  }
 };
 
 module.exports = Productos;

@@ -16,15 +16,6 @@ const Ingredientes = {
       });
     });
   },
-
-  create: (nombre) => {
-    return new Promise((resolve, reject) => {
-      db.query('INSERT INTO ingredientes (nombre) VALUES (?)', [nombre], (err, result) => {
-        if (err) return reject(err);
-        resolve({ id: result.insertId, nombre });
-      });
-    });
-  }
   
 };
 

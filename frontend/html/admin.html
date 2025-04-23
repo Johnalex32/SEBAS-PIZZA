@@ -16,6 +16,7 @@
 
   <!-- Contenedor principal de las secciones -->
   <div class="panel">
+    <button id="cerrarSesion" style="float: right; margin-top: -40px;">🚪 Cerrar sesión</button>
     <!-- Sección de Pedidos -->
     <section id="seccionPedidos" class="tab-content active">
       <h2>Pedidos Recientes</h2>
@@ -27,27 +28,7 @@
       <h2>Menú Actual</h2>
       <div id="listaMenu"></div>
 
-      <!-- Sección para Agregar Producto -->
-      <h2>Agregar Producto</h2>
-      <form id="formAgregar">
-        <input type="text" placeholder="Nombre del producto" id="nombreProducto" required />
-        <input type="number" placeholder="Precio" id="precioProducto" min="0" step="0.01" required />
-
-        <select id="categoriaProducto" required>
-          <option value="">Selecciona una categoría</option>
-        </select>
-
-        <label>Selecciona los ingredientes:</label>
-        <select id="ingredientesProducto" multiple required></select>
-
-        <button type="submit">Agregar</button>
-      </form>
-
-      <h2>Agregar Ingrediente</h2>
-      <form id="formAgregarIngrediente">
-        <input type="text" id="nombreIngrediente" placeholder="Nombre del ingrediente" required />
-        <button type="submit">Agregar Ingrediente</button>
-      </form>
+     
     </section>
   </div>
 
