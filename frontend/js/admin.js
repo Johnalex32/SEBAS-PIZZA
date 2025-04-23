@@ -113,8 +113,6 @@ document.getElementById("cerrarSesion").addEventListener("click", () => {
 
     // Cargar la primera pestaña por defecto
     cargarPedidos();
-    cargarCategorias();
-    cargarIngredientes();
   });
   
   
